@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+		
+		<title>Movie Review | Review</title>
+
+		<!-- Loading third party fonts -->
+		<link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|" rel="stylesheet" type="text/css">
+		<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+		<!-- Loading main css file -->
+		<link rel="stylesheet" href="style.css">
+		
+
+	</head>
+
+
+	<body>
+		
+
+		<div id="site-content">
+			<header class="site-header">
+				<div class="container">
+					<a href="index.html" id="branding">
+						<img src="images/logo.png" alt="" class="logo">
+						<div class="logo-copy">
+							<h1 class="site-title">Company Name</h1>
+							<small class="site-description">Tagline goes here</small>
+						</div>
+					</a> <!-- #branding -->
+
+					<div class="main-navigation">
+						<button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
+						<ul class="menu">
+							<li class="menu-item"><a href="index.html">Home</a></li>
+							<li class="menu-item"><a href="about.html">About</a></li>
+							<li class="menu-item"><a href="review.1.html">Movie reviews</a></li>
+							<li class="menu-item"><a href="joinus.html">Join us</a></li>
+							<li class="menu-item"><a href="contact.html">Contact</a></li>
+						</ul> <!-- .menu -->
+
+						<form action="#" class="search-form">
+							<input type="text" placeholder="Search...">
+							<button><i class="fa fa-search"></i></button>
+						</form>
+					</div> <!-- .main-navigation -->
+
+					<div class="mobile-navigation"></div>
+				</div>
+			</header>
+			<main class="main-content">
+				<div class="container">
+					<div class="page">
+						<div class="breadcrumbs">
+							<a href="index.html">Home</a>
+							<span>Movie Review</span>
+						</div>
+						<div class="filters">
+							<select id="categorySelect" onchange="navigateToPage(this)">
+								<option value="action.html">Action</option>
+								<option value="animation.html">Animation</option>
+								<option value="adven.html">Adventure</option>
+								<option value="drama.html">Drama</option>
+								<option value="fan.html">Fantasy</option>
+							</select>
+							
+							<select name="#" id="yearSelect">
+								<option value="#">2012</option>
+								<option value="#">2013</option>
+								<option value="#">2014</option>
+							</select>
+						</div>
+						
+						<script>
+							function navigateToPage(selectElement) {
+								var selectedValue = selectElement.value;
+								if (selectedValue !== "#") {
+									window.location.href = selectedValue;
+								}
+							}
+						</script>
+
+						<div class="movie-list">
+							<div class="movie">
+								<figure class="movie-poster"><img src="movies/MV5BMGI0Yjg2ODAtNDYzNi00Njc2LTlkMmMtMmRmYWI5MDE4ZGRkXkEyXkFqcGc@._V1_.jpg" alt="#"></figure>
+								<div class="movie-title"><a href="gost.html">Gost Busters</a></div>
+								<p>Sed ut perspiciatis unde omnis iste natus error voluptatem doloremque.</p>
+							</div>
+							<div class="movie">
+								<figure class="movie-poster"><img src="movies/girl.jpg" alt="#"></figure>
+								<div class="movie-title"><a href="girl.html">Gone Girl</a></div>
+								<p>Sed ut perspiciatis unde omnis iste natus error voluptatem doloremque.</p>
+							</div>
+							<div class="movie">
+								<figure class="movie-poster"><img src="movies/Harry potter and the sorcerer's stone.jpg" alt="#"></figure>
+								<div class="movie-title"><a href="harry.html">Harry Potter And the Sorcerer's Stone</a></div>
+								<p>Sed ut perspiciatis unde omnis iste natus error voluptatem doloremque.</p>
+							</div>
+							<div class="movie">
+								<figure class="movie-poster"><img src="movies/hide & seek.jpg" alt="#"></figure>
+								<div class="movie-title"><a href="hide.html">Hide And Seek</a></div>
+								<p>Sed ut perspiciatis unde omnis iste natus error voluptatem doloremque.</p>
+							</div>
+							<div class="movie">
+								<figure class="movie-poster"><img src="movies/inside out.jpg" alt="#"></figure>
+								<div class="movie-title"><a href="inside.html">Inside Out</a></div>
+								<p>Sed ut perspiciatis unde omnis iste natus error voluptatem doloremque.</p>
+							</div>
+							<div class="movie">
+								<figure class="movie-poster"><img src="movies/iron man.jpg" alt="#"></figure>
+								<div class="movie-title"><a href="iron.html">Iron Man</a></div>
+								<p>Sed ut perspiciatis unde omnis iste natus error voluptatem doloremque.</p>
+							</div>
+							<div class="movie">
+								<figure class="movie-poster"><img src="movies/jurassic world.jpg" alt="#"></figure>
+								<div class="movie-title"><a href="jurasic.html">Jurassic World</a></div>
+								<p>Sed ut perspiciatis unde omnis iste natus error voluptatem doloremque.</p>
+							</div>
+							<div class="movie">
+								<figure class="movie-poster"><img src="movies/jungle book.jpg" alt="#"></figure>
+								<div class="movie-title"><a href="book.html">The Jungle Book</a></div>
+								<p>Sed ut perspiciatis unde omnis iste natus error voluptatem doloremque.</p>
+							</div>
+                            
+						</div> <!-- .movie-list -->
+
+						<div class="pagination">
+							<a href="review.2.html" class="page-number prev"><i class="fa fa-angle-left"></i></a>
+							<a href="review.1.html" class="page-number">1</a>
+							<a href="review.2.html" class="page-number">2</a>
+						   
+							<span class="page-number current">3</span>
+							<a href="review.4.html" class="page-number">4</a>
+							<a href="review.5.html" class="page-number">5</a>
+							<a href="review.4.html" class="page-number next"><i class="fa fa-angle-right"></i></a>
+						</div>
+					</div>
+				</div> <!-- .container -->
+			</main>
+			<footer class="site-footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-2">
+							<div class="widget">
+								<h3 class="widget-title">About Us</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia tempore vitae mollitia nesciunt saepe cupiditate</p>
+							</div>
+						</div>
+						<div class="col-md-2">
+							<div class="widget">
+								<h3 class="widget-title">Recent Review</h3>
+								<ul class="no-bullet">
+									<li>Lorem ipsum dolor</li>
+									<li>Sit amet consecture</li>
+									<li>Dolorem respequem</li>
+									<li>Invenore veritae</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-2">
+							<div class="widget">
+								<h3 class="widget-title">Help Center</h3>
+								<ul class="no-bullet">
+									<li>Lorem ipsum dolor</li>
+									<li>Sit amet consecture</li>
+									<li>Dolorem respequem</li>
+									<li>Invenore veritae</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-2">
+							<div class="widget">
+								<h3 class="widget-title">Join Us</h3>
+								<ul class="no-bullet">
+									<li>Lorem ipsum dolor</li>
+									<li>Sit amet consecture</li>
+									<li>Dolorem respequem</li>
+									<li>Invenore veritae</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-2">
+							<div class="widget">
+								<h3 class="widget-title">Social Media</h3>
+								<ul class="no-bullet">
+									<li>Facebook</li>
+									<li>Twitter</li>
+									<li>Google+</li>
+									<li>Pinterest</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-2">
+							<div class="widget">
+								<h3 class="widget-title">Newsletter</h3>
+								<form action="#" class="subscribe-form">
+									<input type="text" placeholder="Email Address">
+								</form>
+							</div>
+						</div>
+					</div> <!-- .row -->
+
+					<div class="colophon">Copyright 2014 Company name, Designed by Themezy. All rights reserved</div>
+				</div> <!-- .container -->
+
+			</footer>
+		</div>
+		<!-- Default snippet for navigation -->
+		
+
+
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="js/plugins.js"></script>
+		<script src="js/app.js"></script>
+		
+		
+	</body>
+
+</html>
