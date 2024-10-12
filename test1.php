@@ -11,19 +11,17 @@ $username = $_SESSION['username']; // Retrieve username from session
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Profile</title>
-    <link rel="stylesheet" href="profile.css">
+    
     <link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|" rel="stylesheet" type="text/css">
 		<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
 		<link rel="icon" href="favicon.ico" sizes="48x48" type="image/x-icon">
 		<!-- Loading main css file -->
 		<link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="profile.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
-    <header>
-        <h1>User Profile</h1>
-        <div id="site-content">
-			<header class="site-header">
+<header class="site-header">
 				<div class="container">
 					<a href="index.html" id="branding">
 						<img src="2.png" alt="" class="logo">
@@ -60,7 +58,10 @@ $username = $_SESSION['username']; // Retrieve username from session
 					<div class="mobile-navigation"></div>
 				</div>
 			</header>
-    
+    <header>
+        <h1>User Profile</h1>
+        <div id="site-content">
+			    
     <main>
         <section id="profile-info">
             <h2>Profile Information</h2>

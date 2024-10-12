@@ -1456,7 +1456,7 @@ rint-inline {
     display: inline-block;
     padding: 10px 0; }
     .main-navigation .menu-item a {
-      padding: 0 15px;
+      padding: 0px 20px;
       display: inline-block;
       color: #84878d;
       font-size: 14px;
@@ -1675,8 +1675,8 @@ rint-inline {
     color: #84878d;
     font-size: 15px;
     font-size: 1em;
-    -webkit-transition: .3s ease;
-            transition: .3s ease; }
+    -webkit-transition: .6s ease;
+            transition: .6s ease; }
     .pagination .page-number.current, .pagination .page-number:hover {
       background: #ffaa3c;
       color: white; }
@@ -1695,7 +1695,7 @@ rint-inline {
   .site-footer .widget {
     margin-bottom: 30px; }
   .site-footer .widget-title {
-    color: #bec1c8;
+    color: #ffffff;
     font-weight: 300; }
   .site-footer .subscribe-form input[type="text"] {
     width: 100%;

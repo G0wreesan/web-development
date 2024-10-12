@@ -132,6 +132,14 @@
 							</div>
 						</div>
 					</div>
+					<h2>Submit Your Review</h2>
+        <form method="post" action="submit_review.php">
+            <input type="hidden" name="movie_title" value="Movie Title"> <!-- Set movie title dynamically -->
+            <input type="hidden" name="movie_year" value="2024"> <!-- Set movie year dynamically -->
+            <label for="review_text">Your Review:</label>
+            <textarea name="review_text" id="review_text" required></textarea>
+            <button type="submit">Submit Review</button>
+        </form>
 				</div> <!-- .container -->
 			</main>
 			<footer class="site-footer">
