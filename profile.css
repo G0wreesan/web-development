@@ -1,0 +1,129 @@
+/* General Styling for the Profile Page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+}
+
+main {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1200px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 10px;
+    color: #4CAF50;
+}
+
+#profile-info {
+    margin-bottom: 30px;
+}
+
+#profile-info p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Reviews Table Styling */
+#reviews-list {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#reviews-list th, #reviews-list td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#reviews-list th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#reviews-list tr:hover {
+    background-color: #f1f1f1;
+    transition: background-color 0.3s ease;
+}
+
+#reviews-list td a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+#reviews-list td a:hover {
+    text-decoration: underline;
+}
+
+/* Buttons for Edit/Delete */
+.edit-btn, .delete-btn {
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.edit-btn {
+    background-color: #4CAF50;
+}
+
+.delete-btn {
+    background-color: #f44336;
+}
+
+.edit-btn:hover, .delete-btn:hover {
+    transform: scale(1.05);
+}
+
+/* Animation for hover effects */
+.edit-btn:active, .delete-btn:active {
+    transform: scale(0.95);
+}
+
+@media (max-width: 768px) {
+    /* For smaller screens, make the table more responsive */
+    #reviews-list, #reviews-list tr, #reviews-list td, #reviews-list th {
+        display: block;
+        width: 100%;
+    }
+
+    #reviews-list tr {
+        margin-bottom: 10px;
+    }
+
+    #reviews-list th {
+        display: none; /* Hide the table headers on small screens */
+    }
+
+    #reviews-list td {
+        padding: 10px;
+        text-align: right;
+        position: relative;
+    }
+
+    #reviews-list td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        font-weight: bold;
+        text-align: left;
+    }
+}

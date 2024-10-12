@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -36,24 +39,31 @@
 							<small class="site-description">Discover, Review, Repeat</small>
 						</div>
 					</a> <!-- #branding -->
-
+			
 					<div class="main-navigation">
 						<button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
 						<ul class="menu">
 							<li class="menu-item current-menu-item"><a href="index.html">Home</a></li>
 							<li class="menu-item"><a href="about.html">About</a></li>
 							<li class="menu-item"><a href="review.1.html">Movies</a></li>
-							<li class="menu-item"><a href="joinus.html">Join Us</a></li>
+							
+							<!-- Conditional login/signup or profile display -->
+							<?php if (isset($_SESSION['username'])): ?>
+								<li class="menu-item"><a href="test1.php">Hi, <?php echo $_SESSION['username']; ?>, Welcome back!</a></li>
+							<?php else: ?>
+								<li class="menu-item"><a href="login_or_signup.html">Login/Sign up</a></li>
+							<?php endif; ?>
+							
 							<li class="menu-item"><a href="contact.html">About Us</a></li>
 						</ul> <!-- .menu -->
-
+			
 						<form action="search.php" class="search-form" method="get">
 							<input type="text" name="search" placeholder="Search..." required>
 							<button type="submit"><i class="fa fa-search"></i></button>
 						</form>
-						
+			
 					</div> <!-- .main-navigation -->
-
+			
 					<div class="mobile-navigation"></div>
 				</div>
 			</header>
